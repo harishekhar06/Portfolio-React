@@ -7,14 +7,14 @@ export const Skills = () => {
       <div className="container">
         <h2 className="section-title">Skills</h2>
         <p className="section-description">
-          Languages and Technologies that I have learned and applied to my projects
+          Some of the languages that I have worked in
         </p>
         <div className="skills-icons">
           <FaPython className="skill-icon" title="Python" />
           <FaReact className="skill-icon" title="React" />
+          <FaHtml5 className="skill-icon" title="HTML" />
           <FaCss3Alt className="skill-icon" title="CSS" />
           <FaDatabase className="skill-icon" title="Database" />
-          <FaHtml5 className="skill-icon" title="HTML" />
           <FaJsSquare className="skill-icon" title="JavaScript" />
           <FaBootstrap className="skill-icon" title="Bootstrap" />
         </div>

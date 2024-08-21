@@ -1,6 +1,5 @@
 @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@100;500&display=swap');
 
-/* General reset and base styles */
 * {
   margin: 0;
   padding: 0;
@@ -21,7 +20,6 @@ body {
   font-family: 'Poppins', sans-serif !important;
 }
 
-/* Full viewport section */
 .full-viewport-section {
   width: 100vw;
   height: 100vh;
@@ -34,24 +32,22 @@ body {
   text-align: center;
 }
 
-/* Home section */
 #home {
   background-image: url('../src/assets/images/banner-bg.png');
   background-size: cover;
   background-position: center;
   background-repeat: no-repeat;
-  width: 100vw; /* Full viewport width */
-  height: 100vh; /* Full viewport height */
+  width: 100vw;
+  height: 100vh;
   display: flex;
   justify-content: center;
   align-items: center;
   text-align: center;
 }
 
-/* Skills section */
 #skills {
-  width: 100vw; /* Full viewport width */
-  height: 100vh; /* Full viewport height */
+  width: 100vw;
+  height: 100vh;
   padding: 6rem 9%;
   background-image: url('../src/assets/images/bg1.png');
   background-size: cover;
@@ -64,7 +60,6 @@ body {
   flex-direction: column;
 }
 
-/* Skill icon styles */
 .skill-icon {
   width: 70px;
   height: 70px;
@@ -73,7 +68,6 @@ body {
   box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
 }
 
-/* Typography and text styles */
 h1, h2, h3, h4, h5, h6 {
   margin: 0;
   padding: 0;
@@ -247,7 +241,6 @@ nav.navbar .navbar-toggler[aria-expanded="true"] .navbar-toggler-icon {
   border-color: transparent;
 }
 
-/* Banner styles */
 .banner {
   margin-top: 0;
   padding: 200px 0 100px 0;
@@ -276,9 +269,9 @@ nav.navbar .navbar-toggler[aria-expanded="true"] .navbar-toggler-icon {
 }
 
 .banner .social-icon {
-  width: 100vw; /* Full viewport width */
-  height: 100vh; /* Full viewport height */
-  background-image: url('../src/assets/images/tech talk.png'); /* Background image */
+  width: 100vw;
+  height: 100vh; 
+  background-image: url('../src/assets/images/tech talk.png');
   background-size: cover;
   background-position: center;
   background-repeat: no-repeat;
@@ -288,8 +281,8 @@ nav.navbar .navbar-toggler[aria-expanded="true"] .navbar-toggler-icon {
 }
 
 .banner .social-icon button {
-  width: 30px; /* Reduced button size */
-  height: 30px; /* Reduced button size */
+  width: 30px;
+  height: 30px; 
   background: rgba(217, 217, 217, 0.1);
   border-radius: 50%;
   margin-right: 6px;
@@ -301,15 +294,57 @@ nav.navbar .navbar-toggler[aria-expanded="true"] .navbar-toggler-icon {
 }
 
 .banner .social-icon button img {
-  width: 50%; /* Adjusted image size within the button */
+  width: 50%;
   transition: filter 0.3s ease-in-out;
 }
 
-.connect-button-wrapper {
-  margin-top: 10px;
+.connect {
+  padding: 100px 0;
+  background-image: url('./assets/images/tech talk.png');
+  background-size: cover;
+  background-repeat: no-repeat;
+  color: #fff;
+  text-align: center;
 }
 
-/* Animated image */
+.connect-title {
+  font-size: 28px; /* Smaller font size */
+  font-weight: 600;
+  margin-bottom: 20px;
+  text-align: center;
+}
+
+.connect p {
+  font-size: 16px;
+  line-height: 1.6;
+  margin-bottom: 30px;
+}
+
+.social-icon {
+  display: flex;
+  justify-content: center;
+  gap: 15px; /* Space between buttons */
+}
+
+.social-icon button {
+  width: 40px; /* Uniform width */
+  height: 40px; /* Uniform height */
+  background: rgba(217, 217, 217, 0.1);
+  border-radius: 50%;
+  border: 1px solid rgb(76, 0, 92);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  transition: background 0.3s ease-in-out, color 0.3s ease-in-out, box-shadow 0.3s ease-in-out;
+}
+
+.social-icon button img {
+  width: 60%; /* Adjust image size */
+  height: auto;
+}
+
+
+
 .animated-image {
   animation: updown 3s linear infinite;
   margin-top: -70px;
